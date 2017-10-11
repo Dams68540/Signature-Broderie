@@ -142,7 +142,7 @@ body
 
 .main
 {
-    margin: 20px auto;
+    margin: 10px auto;
     text-align: center;
 }
 
@@ -256,8 +256,9 @@ body
 
 .border-separ
 {
-    margin: 20px;
-    border: solid 1px black;
+    margin: 20px 0 20px 0;
+    width: 100%;
+    border: solid 1px #999999;
 }
 
 .formBlock
