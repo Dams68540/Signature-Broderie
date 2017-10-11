@@ -19,20 +19,33 @@
     <!-- CSS -->
 
     <link rel="stylesheet" href="{{ URL }}css/index.css">
+    <link rel="stylesheet" media="screen and (max-width: 1280px)" href="{{ URL }}css/index.css">
 
 </head>
 <body>
 
 <header>
     <div class="jumbotron img">
-        <nav class="navbar navbar-modif">
-            <div class="container-fluid header">
-                <p class="navbar-text loc">Feldkirch 68540</p>
-                <ul class="nav nav-pills nav-justified nav-link">
-                    <li role="presentation" class="active"><a class="linkactive" href="{{ URL }}">Accueil</a></li>
-                    <li role="presentation"><a class="" href="{{ URL }}articles">Articles</a></li>
-                    <li role="presentation"><a class="" href="{{ URL }}home/news">News</a></li>
-                </ul>
+
+        <nav class="navbar navbar-default navbar-modif">
+            <div class="container-fluid">
+                <div class="navbar-header header">
+                    <button type="button" class="navbar-toggle collapsed navbar-button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <p class="navbar-text loc">Feldkirch 68540</p>
+                </div>
+
+                <div class="collapse navbar-collapse navbar-link" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right nav-link">
+                        <li><a class="linkactive" href="{{ URL }}">Accueil</a></li>
+                        <li><a href="{{ URL }}articles">Articles</a></li>
+                        <li><a href="{{ URL }}home/news">News</a></li>
+                    </ul>
+                </div>
             </div>
         </nav>
 
