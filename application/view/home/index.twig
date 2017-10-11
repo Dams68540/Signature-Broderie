@@ -61,13 +61,13 @@
     <div class="container-fluid news-block">
         {% for actu in actualites %}
             <div class="new col-md-4">
-                    <div class="jumbotron news">
-                <a href="{{ URL }}articles/newsInfo/{{ actu.id }}">
+                <div class="jumbotron news">
+                    <a href="{{ URL }}articles/newsInfo/{{ actu.id }}">
                         <img class="sizefix" src="{{ URL }}img/News/{{ actu.id_image }}" alt="img"/>
                         <div class="border-separ"></div>
                         <p class="news-titre">{{ actu.titre }}</p>
-                </a>
-                    </div>
+                    </a>
+                </div>
             </div>
         {% endfor %}
     </div>
