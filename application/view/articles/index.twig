@@ -14,7 +14,7 @@
                     {% for article in articles.SelectArticle(currentCategorie.cate) %}
                         <div class="col-md-3 articles">
                             <a href="{{ URL }}articles/articleInfo/{{ article.id }}">
-                                <img class="sizefix" src="{{ URL }}img/articles/{{ article.id_image }}" alt="img">
+                                <img class="sizefix" src="{{ URL }}img/Articles/{{ article.id_image }}" alt="img">
                                 <h4>{{ article.nom }}</h4>
                                 <p>{{ article.description|truncate(20, true) }}</p>
                                 <p>{{ article.couleur }}</p>
